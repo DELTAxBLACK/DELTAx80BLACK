@@ -1,160 +1,112 @@
+
 DELTA BLACK
 
-██████╗ ███████╗██╗  ████████╗ █████╗
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/235224431-e8c8c12e-6826-47f1-89fb-2ddad83b3abf.gif" width="700">
+</p>██████╗ ███████╗██╗  ████████╗ █████╗
 ██╔══██╗██╔════╝██║  ╚══██╔══╝██╔══██╗
 ██║  ██║█████╗  ██║     ██║   ███████║
-██║  ██║██╔══╝  ██║     ██║   ██╔══██║
+██║  ██║██╔══╝  ██║     ██╔══██╗
 ██████╔╝███████╗███████╗██║   ██║  ██║
 ╚═════╝ ╚══════╝╚══════╝╚═╝   ╚═╝  ╚═╝
 
         B L A C K   R E C O N   S U I T E
 
 <p align="center">
-  <img src="assets/delta-black.svg" alt="DELTA BLACK" width="720">
+  <img src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" width="500">
 </p><p align="center">
-  <b>CDN / DNS Exposure Assessment Toolkit</b><br>
-  Focused, modular, terminal-first reconnaissance for authorized security testing.
+  <b>CDN / DNS EXPOSURE ASSESSMENT TOOLKIT</b><br>
+  Focused • Modular • Terminal-First • Authorized Security Testing
+</p><p align="center">""Python" (https://img.shields.io/badge/Python-3.9%2B-111827?style=for-the-badge&logo=python&logoColor=38BDF8)" (https://www.python.org/)
+""Platform" (https://img.shields.io/badge/Platform-Kali%20%7C%20Linux%20%7C%20Termux-111827?style=for-the-badge&logo=linux&logoColor=white)" (https://github.com/DELTAxBLACK/DELTAx80BLACK)
+""License" (https://img.shields.io/badge/License-MIT-111827?style=for-the-badge)" (LICENSE)
+
 </p><p align="center">
   <a href="https://github.com/DELTAxBLACK/DELTAx80BLACK">GitHub</a> •
-  <a href="https://t.me/Delta167">Telegram</a> •
-  <a href="LICENSE">MIT License</a>
+  <a href="https://t.me/Delta167">Telegram</a>
 </p>---
 
-Overview
+"01" — OVERVIEW
 
-DELTA BLACK is a terminal-first reconnaissance toolkit designed for authorized security assessments.
+DELTA BLACK is a terminal-first reconnaissance toolkit for authorized security assessments.
 
-It focuses on identifying DNS and CDN-related exposure and gathering publicly available information about a target domain.
+It focuses on DNS, CDN, subdomain and publicly available network information that can help identify infrastructure exposure.
 
-The toolkit can perform:
+«AUTHORIZED TESTING ONLY
 
-- Cloudflare detection
-- Historical DNS/IP lookups
-- Subdomain enumeration
-- DNS resolution
-- HTTP server/header inspection
-- TLS certificate inspection
-- Configurable concurrency
-- Configurable request timeouts
-- Optional CSV reporting
-- Built-in wordlists
-- Clean terminal output
-
-«Authorization required: Only use DELTA BLACK against systems you own or systems for which you have explicit permission to perform security testing.»
+Use DELTA BLACK only against systems you own or systems for which you have explicit permission to perform security testing.»
 
 ---
 
-Features
+"02" — FEATURES
 
-- [x] Cloudflare detection
-- [x] Historical IP lookups
-- [x] Subdomain enumeration
-- [x] DNS resolution
-- [x] HTTP header inspection
-- [x] TLS certificate inspection
-- [x] Configurable concurrency
-- [x] Configurable timeout
-- [x] Custom wordlists
-- [x] Optional CSV output
-- [x] Verbose logging
-- [x] Interactive confirmation
-- [x] Optional SecurityTrails integration
-- [x] Termux support
-- [x] Kali Linux support
-- [x] Debian / Ubuntu support
-- [x] Windows support
-- [x] macOS support
-
----
-
-Requirements
-
-DELTA BLACK requires:
-
-- Python 3.9+
-- Git
-- pip
-- Internet connection
-- Python dependencies listed in "requirements.txt"
-
-Recommended:
-
-- Python virtual environment
-- Updated system packages
-- A dedicated authorized testing environment
+[+] Cloudflare Detection
+[+] Historical DNS / IP Lookups
+[+] Subdomain Enumeration
+[+] DNS Resolution
+[+] HTTP Header Inspection
+[+] TLS Certificate Inspection
+[+] Configurable Concurrency
+[+] Configurable Timeouts
+[+] Custom Wordlists
+[+] CSV Reporting
+[+] Verbose Logging
+[+] SecurityTrails Integration
+[+] Kali Linux Support
+[+] Termux / Android Support
+[+] Linux Support
+[+] Windows Support
+[+] macOS Support
 
 ---
 
-Installation
+"03" — INSTALLATION
 
-Kali Linux
+"KALI LINUX"
 
-Update your package lists:
+01 — Update system
 
 sudo apt update
+sudo apt upgrade -y
 
-Install the required packages:
+02 — Install requirements
 
 sudo apt install -y git python3 python3-pip python3-venv
 
-Clone DELTA BLACK:
+03 — Clone DELTA BLACK
 
 git clone https://github.com/DELTAxBLACK/DELTAx80BLACK.git
 
-Enter the project directory:
+04 — Enter directory
 
 cd DELTAx80BLACK
 
-Create a virtual environment:
+05 — Create virtual environment
 
 python3 -m venv .venv
 
-Activate it:
+06 — Activate environment
 
 source .venv/bin/activate
 
-Install Python dependencies:
+07 — Install Python dependencies
 
 python3 -m pip install -r requirements.txt
 
-Run the program:
+08 — Start DELTA BLACK
 
 python3 delta_black.py example.com
 
-Kali — Quick Installation
-
-sudo apt update && sudo apt install -y git python3 python3-pip python3-venv && git clone https://github.com/DELTAxBLACK/DELTAx80BLACK.git && cd DELTAx80BLACK && python3 -m venv .venv && source .venv/bin/activate && python3 -m pip install -r requirements.txt
-
 ---
 
-Debian / Ubuntu
+"KALI — QUICK INSTALL"
 
-Update the system:
-
-sudo apt update
-
-Install Python and Git:
-
-sudo apt install -y git python3 python3-pip python3-venv
-
-Clone the repository:
-
-git clone https://github.com/DELTAxBLACK/DELTAx80BLACK.git
-
-Enter the directory:
-
-cd DELTAx80BLACK
-
-Create a virtual environment:
-
-python3 -m venv .venv
-
-Activate it:
-
-source .venv/bin/activate
-
-Install dependencies:
-
+sudo apt update && \
+sudo apt install -y git python3 python3-pip python3-venv && \
+git clone https://github.com/DELTAxBLACK/DELTAx80BLACK.git && \
+cd DELTAx80BLACK && \
+python3 -m venv .venv && \
+source .venv/bin/activate && \
 python3 -m pip install -r requirements.txt
 
 Run:
@@ -163,65 +115,93 @@ python3 delta_black.py example.com
 
 ---
 
-Termux / Android
+"04" — TERMUX / ANDROID
 
-DELTA BLACK can also be used in Termux.
-
-Update Termux packages:
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/235224431-e8c8c12e-6826-47f1-89fb-2ddad83b3abf.gif" width="450">
+</p>01 — Update Termux
 
 pkg update
-pkg upgrade
+pkg upgrade -y
 
-Install Git and Python:
+02 — Install Git + Python
 
-pkg install git python
+pkg install -y git python
 
-Clone the repository:
+03 — Clone repository
 
 git clone https://github.com/DELTAxBLACK/DELTAx80BLACK.git
 
-Enter the project:
+04 — Enter project
 
 cd DELTAx80BLACK
 
-Install Python dependencies:
+05 — Install dependencies
 
+python -m pip install -r requirements.txt
+
+06 — Run
+
+python delta_black.py example.com
+
+---
+
+"TERMUX — QUICK INSTALL"
+
+pkg update -y && \
+pkg install -y git python && \
+git clone https://github.com/DELTAxBLACK/DELTAx80BLACK.git && \
+cd DELTAx80BLACK && \
 python -m pip install -r requirements.txt
 
 Run:
 
 python delta_black.py example.com
 
-Termux — Quick Installation
-
-pkg update && pkg install -y git python && git clone https://github.com/DELTAxBLACK/DELTAx80BLACK.git && cd DELTAx80BLACK && python -m pip install -r requirements.txt
-
-«Termux note: Some Python packages may require additional build dependencies depending on the Android/Termux environment. If a dependency fails to install, check the package's error message and install the required Termux package.»
-
 ---
 
-Windows
+"05" — DEBIAN / UBUNTU
+
+sudo apt update
+sudo apt install -y git python3 python3-pip python3-venv
+
+Clone:
+
+git clone https://github.com/DELTAxBLACK/DELTAx80BLACK.git
+cd DELTAx80BLACK
+
+Create environment:
+
+python3 -m venv .venv
+source .venv/bin/activate
 
 Install:
 
-- Python 3
-- Git
+python3 -m pip install -r requirements.txt
 
-Then open PowerShell or Command Prompt.
+Run:
 
-Clone the repository:
+python3 delta_black.py example.com
+
+---
+
+"06" — WINDOWS
+
+Install Python 3 and Git first.
+
+Clone:
 
 git clone https://github.com/DELTAxBLACK/DELTAx80BLACK.git
 
-Enter the directory:
+Enter directory:
 
 cd DELTAx80BLACK
 
-Create a virtual environment:
+Create virtual environment:
 
 python -m venv .venv
 
-Activate it:
+Activate:
 
 .venv\Scripts\activate
 
@@ -235,27 +215,19 @@ python delta_black.py example.com
 
 ---
 
-macOS
+"07" — macOS
 
-Install Git and Python 3.
-
-Clone the repository:
+Clone:
 
 git clone https://github.com/DELTAxBLACK/DELTAx80BLACK.git
-
-Enter the project:
-
 cd DELTAx80BLACK
 
-Create a virtual environment:
+Create environment:
 
 python3 -m venv .venv
-
-Activate it:
-
 source .venv/bin/activate
 
-Install dependencies:
+Install:
 
 python3 -m pip install -r requirements.txt
 
@@ -265,116 +237,88 @@ python3 delta_black.py example.com
 
 ---
 
-Quick Start
+"08" — QUICK START
 
-After installation, run:
+After installation:
 
 python3 delta_black.py example.com
-
-Replace "example.com" with a domain you are authorized to assess.
 
 For Termux:
 
 python delta_black.py example.com
 
+Replace "example.com" with a domain you are authorized to assess.
+
 ---
 
-Usage
+"09" — USAGE
 
-Basic Scan
+Basic scan
 
 python3 delta_black.py example.com
 
----
-
-Skip Historical Lookups
+Skip historical lookups
 
 python3 delta_black.py example.com --skip-historical
 
----
-
-Skip Subdomain Enumeration
+Skip subdomain enumeration
 
 python3 delta_black.py example.com --skip-subdomains
 
----
-
-Custom Wordlist
+Custom wordlist
 
 python3 delta_black.py example.com --wordlist wordlist.txt
 
----
-
-Configure Concurrency
+Configure concurrency
 
 python3 delta_black.py example.com --concurrency 20
 
----
-
-Configure Timeout
+Configure timeout
 
 python3 delta_black.py example.com --timeout 10
 
----
-
-Concurrency + Timeout
-
-python3 delta_black.py example.com --concurrency 20 --timeout 10
-
----
-
-CSV Report
-
-Export results to CSV:
+CSV report
 
 python3 delta_black.py example.com --format csv --output results.csv
 
----
-
-Skip Interactive Confirmation
+Skip confirmation
 
 python3 delta_black.py example.com --yes
 
----
-
-Verbose Mode
+Verbose mode
 
 python3 delta_black.py example.com --verbose
 
----
-
-Update Wordlist
+Update wordlist
 
 python3 delta_black.py example.com --update-wordlist
 
----
-
-Show Help
+Show help
 
 python3 delta_black.py -h
 
 ---
 
-Command Reference
+"10" — COMMAND OPTIONS
 
 Option| Description
 "--skip-historical"| Skip historical DNS/IP lookups
 "--skip-subdomains"| Skip subdomain enumeration
-"--wordlist"| Specify a custom wordlist
+"--wordlist"| Use a custom wordlist
 "--concurrency"| Configure concurrent workers
 "--timeout"| Configure network timeout
-"--format csv"| Enable CSV reporting
-"--output"| Specify output file
-"--yes"| Skip interactive confirmation
-"--verbose"| Enable verbose logging
-"--update-wordlist"| Refresh the bundled wordlist
-"-h"| Display help
+"--format csv"| Enable CSV output
+"--output"| Specify report filename
+"--yes"| Skip confirmation
+"--verbose"| Enable verbose output
+"--update-wordlist"| Refresh wordlist
+"-h"| Show help
 
 ---
 
-Configuration
+"11" — CONFIGURATION
 
-DELTA BLACK supports optional configuration through:
+Optional configuration is stored in:
 
 config.ini
 
@@ -383,23 +327,13 @@ Example:
 [DEFAULT]
 securitytrails_api_key = your_key_here
 
-SecurityTrails
-
 SecurityTrails integration is optional.
 
-If you have an authorized API key, add it to "config.ini".
-
-Never commit real API keys to GitHub.
-
-Recommended practice:
-
-config.ini
-
-should not contain real credentials when the repository is public.
+Never commit real API keys or credentials to a public repository.
 
 ---
 
-Project Structure
+"12" — PROJECT STRUCTURE
 
 DELTAx80BLACK/
 │
@@ -426,78 +360,38 @@ DELTAx80BLACK/
 
 ---
 
-Testing
+"13" — WORDLISTS
 
-Run the test suite from the project directory:
+Bundled wordlists:
+
+wordlist.txt
+wordlist2.txt
+
+Custom wordlist:
+
+python3 delta_black.py example.com --wordlist my-wordlist.txt
+
+---
+
+"14" — TESTING
+
+Run tests:
 
 python3 -m unittest discover -s tests -v
 
-On Termux:
+Termux:
 
 python -m unittest discover -s tests -v
 
 ---
 
-Troubleshooting
+"15" — UPDATE
 
-Python Not Found
-
-Check Python:
-
-python3 --version
-
-or:
-
-python --version
-
----
-
-pip Not Found
-
-Kali / Debian / Ubuntu:
-
-sudo apt install python3-pip
-
-Termux:
-
-pkg install python
-
----
-
-Git Not Found
-
-Kali / Debian / Ubuntu:
-
-sudo apt install git
-
-Termux:
-
-pkg install git
-
----
-
-Permission Problems on Linux
-
-Avoid installing Python packages globally when possible.
-
-Create a virtual environment:
-
-python3 -m venv .venv
-source .venv/bin/activate
-
-Then:
-
-python3 -m pip install -r requirements.txt
-
----
-
-Updating DELTA BLACK
-
-Enter the project directory:
+Enter the repository:
 
 cd DELTAx80BLACK
 
-Pull the latest version:
+Pull the latest changes:
 
 git pull
 
@@ -507,22 +401,40 @@ python3 -m pip install -r requirements.txt --upgrade
 
 ---
 
-Uninstall
+"16" — TROUBLESHOOTING
 
-Remove the project directory:
+Check Python
 
-cd ..
-rm -rf DELTAx80BLACK
+python3 --version
 
-If you created a virtual environment, it is removed together with the project directory.
+or:
+
+python --version
+
+Check Git
+
+git --version
+
+Check pip
+
+python3 -m pip --version
+
+Reinstall dependencies
+
+python3 -m pip install -r requirements.txt --upgrade
+
+Linux virtual environment
+
+python3 -m venv .venv
+source .venv/bin/activate
 
 ---
 
-Output
+"17" — OUTPUT
 
-By default, DELTA BLACK displays results directly in the terminal.
+Results are displayed directly in the terminal by default.
 
-CSV output is optional:
+Optional CSV output:
 
 python3 delta_black.py example.com --format csv --output results.csv
 
@@ -530,79 +442,32 @@ DELTA BLACK does not generate JSON report files.
 
 ---
 
-Wordlists
+"18" — SUPPORTED PLATFORMS
 
-The project includes bundled wordlists:
-
-wordlist.txt
-wordlist2.txt
-
-You can specify another authorized wordlist:
-
-python3 delta_black.py example.com --wordlist my-wordlist.txt
-
----
-
-Recommended Workflow
-
-For an authorized assessment:
-
-git clone https://github.com/DELTAxBLACK/DELTAx80BLACK.git
-cd DELTAx80BLACK
-python3 -m venv .venv
-source .venv/bin/activate
-python3 -m pip install -r requirements.txt
-python3 delta_black.py example.com
-
-For a faster scan without historical lookups:
-
-python3 delta_black.py example.com --skip-historical
-
-For CSV reporting:
-
-python3 delta_black.py example.com --format csv --output results.csv
+┌──────────────────────────────┐
+│        DELTA BLACK           │
+├──────────────────────────────┤
+│ ✓ Kali Linux                 │
+│ ✓ Debian                     │
+│ ✓ Ubuntu                     │
+│ ✓ Termux / Android           │
+│ ✓ Windows                    │
+│ ✓ macOS                      │
+└──────────────────────────────┘
 
 ---
 
-Supported Platforms
+"19" — SECURITY NOTICE
 
-Platform| Status
-Kali Linux| Supported
-Debian| Supported
-Ubuntu| Supported
-Termux / Android| Supported
-Windows| Supported
-macOS| Supported
+DELTA BLACK is intended for authorized security testing and educational environments.
+
+Only scan systems where you have explicit authorization.
+
+Do not use this project for unauthorized access, disruption, or testing against systems without permission.
 
 ---
 
-Security & Privacy
-
-DELTA BLACK is intended for authorized reconnaissance and security assessment.
-
-Do not use the toolkit to:
-
-- Access systems without permission
-- Attempt unauthorized intrusion
-- Disrupt services
-- Circumvent security controls
-- Collect private information without authorization
-
-Always follow the rules of engagement defined by the system owner.
-
----
-
-Legal Notice
-
-DELTA BLACK is provided for authorized security testing and educational purposes.
-
-You are responsible for ensuring that you have appropriate authorization before scanning a target.
-
-The developers and contributors are not responsible for misuse, unauthorized scanning, damage, disruption, or unlawful activity resulting from use of this project.
-
----
-
-Attribution
+"20" — ATTRIBUTION
 
 <p align="center">
   <a href="https://t.me/Delta167">
@@ -614,30 +479,35 @@ Upstream credit remains intact.
 
 ---
 
-Modified By
+"21" — MODIFIED BY
 
-DELTA
+██████╗ ███████╗██╗  ████████╗ █████╗
+██╔══██╗██╔════╝██║  ╚══██╔══╝██╔══██╗
+██║  ██║█████╗  ██║     ██║   ███████║
+██║  ██║██╔══╝  ██║     ██║   ██╔══██║
+██████╔╝███████╗███████╗██║   ██║  ██║
+╚═════╝ ╚══════╝╚══════╝╚═╝   ╚═╝  ╚═╝
 
-Telegram: @Delta167
+                 DELTA
+
+Modified By: DELTA
+
+Telegram: "@Delta167" (https://t.me/Delta167)
 
 ---
 
-License
+"22" — LICENSE
 
 This project is licensed under the MIT License.
 
-See:
-
-LICENSE
-
-for the complete license text.
+See ""LICENSE"" (LICENSE) for the complete license text.
 
 ---
 
-<p align="center">DELTA BLACK
-
-"BLACK RECON SUITE"
-
-CDN / DNS Exposure Assessment Toolkit
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" width="450">
+</p><p align="center">
+  <b>DELTA BLACK</b><br>
+  <code>BLACK RECON SUITE</code><br><br>
+  <sub>Built for authorized security research.</sub>
 </p>
