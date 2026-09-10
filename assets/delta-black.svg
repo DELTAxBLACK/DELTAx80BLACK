@@ -1,1 +1,19 @@
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-label="DELTA BLACK">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0b0b0f"/>
+      <stop offset="0.55" stop-color="#16161d"/>
+      <stop offset="1" stop-color="#050507"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="360" rx="28" fill="url(#g)"/>
+  <path d="M0 285 L310 70 L505 215 L760 45 L1200 275" fill="none" stroke="#34343e" stroke-width="2"/>
+  <path d="M70 275 L320 95 L470 220" fill="none" stroke="#777784" stroke-width="3" opacity=".65"/>
+  <path d="M730 70 L925 255 L1130 100" fill="none" stroke="#777784" stroke-width="3" opacity=".65"/>
+  <circle cx="320" cy="95" r="6" fill="#fff" filter="url(#glow)"/>
+  <circle cx="925" cy="255" r="6" fill="#fff" filter="url(#glow)"/>
+  <text x="600" y="178" text-anchor="middle" fill="#f4f4f7" font-family="Arial, Helvetica, sans-serif" font-size="74" font-weight="800" letter-spacing="13">DELTA BLACK</text>
+  <text x="600" y="232" text-anchor="middle" fill="#a4a4af" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="600" letter-spacing="6">RECON • DNS • CDN • TLS</text>
+  <rect x="385" y="267" width="430" height="2" fill="#555560"/>
+</svg>
